@@ -4,6 +4,12 @@ import lombok.Data;
 
 import javax.persistence.*;
 
+/**
+ * @Author: ruoxiyun
+ * @Date: 2020/2/15 21:54
+ * @Description:
+ */
+
 @Entity // jpa的注解，需要加
 @Table(name = "users") // 指定数据库的表名
 @Data // lombok
