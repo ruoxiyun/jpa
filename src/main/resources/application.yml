@@ -1,0 +1,21 @@
+#服务器端口配置
+server:
+  port: 8100
+
+
+#数据库配置,数据库需要你自己提前建好表
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/learn?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # JPA配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true #控制台显示sql语句
+        format_sql: true #规范化控制台显示的sql语句（换行了更美观）
